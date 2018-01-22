@@ -1,1 +1,1 @@
-# TrainingAssiognments
+# TrainingAssignments
