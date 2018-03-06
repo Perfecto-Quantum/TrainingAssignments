@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Demo Suite" verbose="0" parallel="tests">
+    <listeners>
+        <listener class-name="com.quantum.listerners.QuantumReportiumListener"/>
+    </listeners>
+
+    <test name="Android Test" enabled="true">
+        <parameter name="driver.capabilities.model" value="Galaxy.*"></parameter>
+        <parameter name="env.resources" value="src/main/resources/android"/>
+
+        <groups>
+            <run>
+                <include name="@02Assignment-calculator" />
+            </run>
+        </groups>
+        <classes>
+            <class
+                    name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+        </classes>
+    </test>
+    <test name="iOS Test" enabled="true">
+        <parameter name="driver.capabilities.model" value="iPhone.*"></parameter>
+        <parameter name="env.resources" value="src/main/resources/ios"/>
+
+        <groups>
+            <run>
+                <include name="@02Assignment-calculator" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+        </classes>
+    </test>
+</suite>
