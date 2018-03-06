@@ -1,5 +1,5 @@
 @W3
-Feature: First Assignment - W3Schools
+Feature: Second Assignment - W3Schools with locators
   @W3testLocators
   Scenario: find html lessons witjh locators
     Given I open browser to webpage "w3schools.com"
