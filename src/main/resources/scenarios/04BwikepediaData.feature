@@ -1,6 +1,6 @@
 @Wikipedia
 Feature: First Test - Wikipedia
-  @WikipediaLocators
+  @wikipediaDynamicData
   Scenario Outline: Locators with Wikipedia
     Given I open browser to webpage "wikipedia.org"
     Then I wait "30" seconds to see the text "The Free Encyclopedia"
